@@ -1,0 +1,29 @@
+ {{#md-pages 'src/_content/common/header.md'}}
+	{{#markdown}}
+  		{{{body}}}
+	{{/markdown}}
+{{/md-pages}}
+
+<section class="vzbd-content blog-section">
+
+	{{#md-pages 'src/_content/common/logo.md'}}
+		{{#markdown}}
+	  		{{{body}}}
+		{{/markdown}}
+	{{/md-pages}}
+
+	{{#md-pages 'src/_content/blog/*.*'}}
+	  <article id="{{slug}}">
+	  	{{#if slug}}
+	    	<h1><a href="#{{slug}}" class='link'><i class="fa fa-link"></i></a>{{title}}</h1>
+    	{{/if}}
+	    {{#markdown}}
+	      {{{body}}}
+	    {{/markdown}}
+	  </article>
+	{{/md-pages}}
+
+	<footer>
+		Made with &hearts; by <a href="http://www.gapminder.org/" target="blank">Gapminder Foundation</a> | <a href="https://github.com/Gapminder/vizabi" target="blank"><i class="fa fa-github"></i></a> 
+	</footer>
+</section>

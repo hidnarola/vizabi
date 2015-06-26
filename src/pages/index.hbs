@@ -1,0 +1,31 @@
+<div id="header_wrapper" class="header-menu">
+	{{#md-pages 'src/_content/common/header.md'}}
+		{{#markdown}}
+	  		{{{body}}}
+		{{/markdown}}
+	{{/md-pages}}
+</div>
+
+<nav class="vzbd-menu">
+	<ul>
+		{{#md-pages 'src/_content/*.*'}}
+
+		  <li><a href="#{{slug}}">{{title}}</a></li>
+		{{/md-pages}}
+	</ul>
+</nav>
+<section class="vzbd-content">
+
+	{{#md-pages 'src/_content/*.*'}}
+	  <article id="{{slug}}">
+	    <h1><a href="#{{slug}}" class='link'><i class="fa fa-link"></i></a>{{title}}</h1>
+	    {{#markdown}}
+	      {{{body}}}
+	    {{/markdown}}
+		</article>
+	{{/md-pages}}
+
+	<footer>
+		Made with &hearts; by <a href="http://www.gapminder.org/" target="blank">Gapminder Foundation</a> | <a href="https://github.com/Gapminder/vizabi" target="blank"><i class="fa fa-github"></i></a> 
+	</footer>
+</section>

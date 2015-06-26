@@ -1,0 +1,79 @@
+.header-menu{
+  position: relative;
+  z-index: 9999 !important;
+}
+.header-content {
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 30px;
+  position: fixed;
+  background: #fefefe !important;
+}
+ul.menu-vu{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+  float:right !important;
+}
+ul.menu-vu li{
+  float: left;
+  margin: 20px;
+}
+ul.menu-vu li a{
+  color:#000;
+}
+.download-menu
+{
+  border: 2px solid rgb(175, 181, 184);
+  color: #000 !important;
+  padding: 9px 20px;
+}
+.blog-section{
+  margin: 0 auto;
+}
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+}
+#header_logo{
+  margin-left: 19px;
+  margin-top: 14px;
+}
+.vzbd-menu {
+  position: fixed;
+  max-width: 250px;
+  width: 100%;
+  background: #f7f7f7;
+}
+.vzbd-content {
+  margin: auto;
+  max-width: 1040px;
+  width: 100%;
+  padding-top: 100px;
+}
+.docs-menu-left{
+  float: left;
+  margin-right: 20px;
+  max-width: 250px;
+  width: 100%;
+}
+.docs-menu-right{
+  float:right;
+}
+.vzbd-menu li > a, .vzbd-menu li > a:hover, .vzbd-menu li > a:visited {
+  color: #32414a;
+  font-size: 15px;
+  padding: 6px 10px;
+  background:none !important;
+}
+.docs-heading{
+  color: #CCCCCC;
+}
+.vzb-placeholder.vzb-loading::after, .vzb-placeholder.vzb-loading-data::after{
+  z-index: 9998 !important;
+}
